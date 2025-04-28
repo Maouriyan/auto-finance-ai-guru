@@ -1,9 +1,8 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
-import { Ai, DollarSign, TrendingUp, TrendingDown } from "lucide-react";
+import { Bot, DollarSign, TrendingUp, TrendingDown } from "lucide-react";
 
 const AiInsights = () => {
   return (
@@ -11,7 +10,7 @@ const AiInsights = () => {
       <div className="container max-w-6xl">
         <div className="mb-12 text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center justify-center mb-4">
-            <Ai className="h-7 w-7 mr-2 text-purple-500" />
+            <Bot className="h-7 w-7 mr-2 text-purple-500" />
             <h2 className="text-3xl font-bold">AI-Powered Financial Insights</h2>
           </div>
           <p className="text-gray-600 dark:text-gray-300 text-lg">

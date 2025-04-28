@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   Card,
@@ -14,7 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Robot } from "lucide-react";
+import { Bot } from "lucide-react";
 
 const FinancingCalculator = () => {
   const [carPrice, setCarPrice] = useState(54990);
@@ -167,7 +166,7 @@ const FinancingCalculator = () => {
           
           <div className="w-full md:w-1/3">
             <div className="mb-6 flex items-center">
-              <Robot className="h-5 w-5 text-purple-500 mr-2" />
+              <Bot className="h-5 w-5 text-purple-500 mr-2" />
               <h3 className="text-xl font-semibold">AI Financial Advisor</h3>
             </div>
 

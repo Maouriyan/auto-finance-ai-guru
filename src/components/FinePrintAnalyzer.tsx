@@ -1,11 +1,10 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
-import { Info, Ai, FileText } from "lucide-react";
+import { Info, Bot, FileText } from "lucide-react";
 
 const FinePrintAnalyzer = () => {
   const [selectedContent, setSelectedContent] = useState("agreement");
@@ -102,7 +101,7 @@ const FinePrintAnalyzer = () => {
         <div className="mb-8 flex items-start justify-between">
           <div>
             <div className="flex items-center">
-              <Ai className="h-6 w-6 mr-2 text-purple-500" />
+              <Bot className="h-6 w-6 mr-2 text-purple-500" />
               <h2 className="text-3xl font-bold">AI Fine Print Analyzer</h2>
             </div>
             <p className="text-gray-600 dark:text-gray-300 text-lg mt-2">

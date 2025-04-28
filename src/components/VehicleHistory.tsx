@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, Users, CarCrash, Bell, BriefcaseBusiness } from "lucide-react";
+import { Bot, Users, Car, Bell, BriefcaseBusiness } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const VehicleHistory = () => {
@@ -40,7 +39,7 @@ const VehicleHistory = () => {
             </div>
             
             <div className="bg-white dark:bg-navy-800 p-4 rounded-lg shadow-sm flex flex-col items-center justify-center text-center">
-              <CarCrash className="h-8 w-8 text-emerald-500 mb-2" />
+              <Car className="h-8 w-8 text-emerald-500 mb-2" />
               <div className="font-bold text-xl">0</div>
               <div className="text-sm text-gray-500">Reported Accidents</div>
             </div>

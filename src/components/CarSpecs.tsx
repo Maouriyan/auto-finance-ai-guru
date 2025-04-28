@@ -3,6 +3,8 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { List, BatteryCharging, Gauge, Lightbulb, Shield, Cpu } from "lucide-react";
 
 const CarSpecs = () => {
   const specs = [
@@ -16,16 +18,48 @@ const CarSpecs = () => {
     { name: "Cargo", value: "76 cu ft" },
   ];
 
-  const features = [
-    "Autopilot",
-    "Premium Sound System",
-    "Heated Seats",
-    "Glass Roof",
-    "Power Liftgate",
-    "19\" Wheels",
-    "Navigate on Autopilot",
-    "Sentry Mode"
-  ];
+  const features = {
+    technology: [
+      "15-inch Touchscreen",
+      "Premium Sound System",
+      "Wireless Phone Charging",
+      "Mobile App Control",
+      "Keyless Entry",
+      "Wi-Fi and LTE Connectivity",
+      "Navigate on Autopilot",
+      "Sentry Mode"
+    ],
+    safety: [
+      "Adaptive Cruise Control",
+      "Automatic Emergency Braking",
+      "Collision Avoidance",
+      "Lane Departure Warning",
+      "Blind Spot Monitoring",
+      "360° Camera Coverage",
+      "Parking Sensors",
+      "HEPA Air Filtration"
+    ],
+    comfort: [
+      "Heated Front & Rear Seats",
+      "Heated Steering Wheel",
+      "Power Adjustable Front Seats",
+      "Glass Roof",
+      "Dual Zone Climate Control",
+      "Power Liftgate",
+      "Ambient Lighting",
+      "Premium Interior Materials"
+    ],
+    performance: [
+      "Sport Mode",
+      "Regenerative Braking",
+      "Adaptive Suspension",
+      "Performance Wheels",
+      "Heat Pump",
+      "19\" Wheels",
+      "Low Center of Gravity",
+      "Aerodynamic Design"
+    ]
+  };
 
   return (
     <div className="container max-w-6xl py-12">
@@ -59,6 +93,94 @@ const CarSpecs = () => {
               stunning combination. This vehicle has been well-maintained and is ready for a new owner.
             </p>
           </div>
+          
+          {/* Features tabs */}
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <List className="mr-2 h-5 w-5" />
+              Features & Equipment
+            </h3>
+            <Tabs defaultValue="technology">
+              <TabsList className="grid grid-cols-4 mb-4">
+                <TabsTrigger value="technology">Technology</TabsTrigger>
+                <TabsTrigger value="safety">Safety</TabsTrigger>
+                <TabsTrigger value="comfort">Comfort</TabsTrigger>
+                <TabsTrigger value="performance">Performance</TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="technology" className="mt-0">
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-center mb-4">
+                      <Cpu className="h-5 w-5 text-blue-500 mr-2" />
+                      <h4 className="font-medium">Technology Features</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {features.technology.map((feature, index) => (
+                        <Badge key={index} variant="outline" className="bg-blue-50 border-blue-200 text-blue-700">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              <TabsContent value="safety" className="mt-0">
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-center mb-4">
+                      <Shield className="h-5 w-5 text-red-500 mr-2" />
+                      <h4 className="font-medium">Safety Features</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {features.safety.map((feature, index) => (
+                        <Badge key={index} variant="outline" className="bg-red-50 border-red-200 text-red-700">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              <TabsContent value="comfort" className="mt-0">
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-center mb-4">
+                      <Lightbulb className="h-5 w-5 text-amber-500 mr-2" />
+                      <h4 className="font-medium">Comfort Features</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {features.comfort.map((feature, index) => (
+                        <Badge key={index} variant="outline" className="bg-amber-50 border-amber-200 text-amber-700">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+              
+              <TabsContent value="performance" className="mt-0">
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-center mb-4">
+                      <Gauge className="h-5 w-5 text-emerald-500 mr-2" />
+                      <h4 className="font-medium">Performance Features</h4>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {features.performance.map((feature, index) => (
+                        <Badge key={index} variant="outline" className="bg-emerald-50 border-emerald-200 text-emerald-700">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            </Tabs>
+          </div>
         </div>
         
         {/* Specs and features */}
@@ -78,13 +200,25 @@ const CarSpecs = () => {
               
               <Separator className="my-6" />
               
-              <h3 className="text-xl font-semibold mb-4">Key Features</h3>
-              <div className="flex flex-wrap gap-2">
-                {features.map((feature, index) => (
-                  <Badge key={index} variant="outline" className="bg-gray-50 dark:bg-gray-800">
-                    {feature}
-                  </Badge>
-                ))}
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <BatteryCharging className="h-5 w-5 text-green-500 mr-2" />
+                  <h4 className="font-medium">Charging Capabilities</h4>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-y-3 text-sm">
+                  <div className="text-gray-500">Supercharging</div>
+                  <div className="font-medium text-right">Yes</div>
+                  
+                  <div className="text-gray-500">Home Charging</div>
+                  <div className="font-medium text-right">11.5 kW max</div>
+                  
+                  <div className="text-gray-500">Charge Port</div>
+                  <div className="font-medium text-right">Tesla Connector</div>
+                  
+                  <div className="text-gray-500">10-80% Charge</div>
+                  <div className="font-medium text-right">~30 minutes</div>
+                </div>
               </div>
             </CardContent>
           </Card>

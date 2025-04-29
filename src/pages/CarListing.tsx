@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { 
   Search, 
@@ -40,6 +39,28 @@ import { Link } from "react-router-dom";
 
 // Sample data - would be replaced with API data in a real application
 const carListings = [
+  {
+    id: 4,
+    title: "2023 Tesla Model Y",
+    price: 48990,
+    dealRating: "Great",
+    mileage: 1200,
+    location: "Denver, CO",
+    year: 2023,
+    features: ["Autopilot", "All-Wheel Drive", "Glass Roof", "Premium Sound"],
+    image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=400&h=300",
+    isNew: true,
+    make: "Tesla",
+    model: "Model Y",
+    color: "White",
+    fuelType: "Electric",
+    engineType: "Dual Motor",
+    doors: 4,
+    seats: 5,
+    daysOnMarket: 3,
+    terrainType: "SUV",
+    dealer: "Tesla Denver"
+  },
   {
     id: 1,
     title: "2022 Toyota Camry",

@@ -21,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/cars" element={<CarListing />} />
+          <Route path="/car/:id" element={<Index />} /> {/* Using Index as the detail page since that's what the user mentioned */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

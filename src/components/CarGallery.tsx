@@ -16,19 +16,19 @@ const carImages = [
     alt: "Tesla Model Y Exterior Front",
   },
   {
-    src: "https://images.unsplash.com/photo-1617788138017-80ad41b9b648?q=80&w=2574&auto=format&fit=crop",
+    src: "https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-1815517476776107293-1024x768.jpeg",
     alt: "Tesla Model Y Interior",
   },
   {
-    src: "https://images.unsplash.com/photo-1660412310039-abad91e62442?q=80&w=1887&auto=format&fit=crop",
+    src: "https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-7592748677561844775-1024x768.jpeg",
     alt: "Tesla Model Y Side View",
   },
   {
-    src: "https://images.unsplash.com/photo-1619841586525-c7633fca62bb?q=80&w=2574&auto=format&fit=crop",
+    src: "https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-1844255080935123153-1024x768.jpeg",
     alt: "Tesla Model Y Rear View",
   },
   {
-    src: "https://images.unsplash.com/photo-1621807725245-a58ba952f3e6?q=80&w=2574&auto=format&fit=crop",
+    src: "https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-3910404572005777552-1024x768.jpeg",
     alt: "Tesla Model Y Wheel Detail",
   }
 ];

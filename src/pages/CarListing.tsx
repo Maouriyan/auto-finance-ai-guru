@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { 
   Search, 
@@ -92,7 +93,7 @@ const carListings = [
     location: "Boulder, CO",
     year: 2023,
     features: ["Apple CarPlay", "Lane Assist", "Sunroof"],
-    image: "https://images.ctfassets.net/c9t6u0qhbv9e/3V0cFymCheMK8i4XRPkCl/636b16f4c41b08a5c9d79903c1ab5afa/2023_Honda_Accord_review_summary.jpg,
+    image: "https://images.ctfassets.net/c9t6u0qhbv9e/3V0cFymCheMK8i4XRPkCl/636b16f4c41b08a5c9d79903c1ab5afa/2023_Honda_Accord_review_summary.jpg",
     isNew: true,
     make: "Honda",
     model: "Accord",

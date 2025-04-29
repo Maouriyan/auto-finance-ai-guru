@@ -24,7 +24,7 @@ const carImages = [
     alt: "Tesla Model Y Side View",
   },
   {
-    src: "https://images.unsplash.com/photo-1619841586: q=80&w=2574&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1619841586525-c7633fca62bb?q=80&w=2574&auto=format&fit=crop",
     alt: "Tesla Model Y Rear View",
   },
   {

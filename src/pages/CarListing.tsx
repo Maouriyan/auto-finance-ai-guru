@@ -7,10 +7,10 @@ import {
   Calendar, 
   CarFront, 
   Fuel, 
-  Engine, 
+  GaugeCircle, 
   DoorOpen, 
   Tag, 
-  Seats, 
+  UserSquare, 
   List 
 } from "lucide-react";
 import { 
@@ -548,7 +548,7 @@ const CarListing = () => {
                   <span>{car.fuelType}</span>
                 </div>
                 <div className="flex items-center gap-1 text-sm">
-                  <Engine className="h-3 w-3 text-gray-500" />
+                  <GaugeCircle className="h-3 w-3 text-gray-500" />
                   <span>{car.engineType}</span>
                 </div>
                 <div className="flex items-center gap-1 text-sm">
@@ -556,7 +556,7 @@ const CarListing = () => {
                   <span>{car.doors} doors</span>
                 </div>
                 <div className="flex items-center gap-1 text-sm">
-                  <Seats className="h-3 w-3 text-gray-500" />
+                  <UserSquare className="h-3 w-3 text-gray-500" />
                   <span>{car.seats} seats</span>
                 </div>
               </div>

@@ -55,7 +55,7 @@ const CarHero = () => {
               <div className="relative w-full aspect-[4/3] animate-float">
                 <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1660412310039-abad91e62442?q=80&w=1887&auto=format&fit=crop"
+                    src="https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-4608112385191168016-1024x768.jpeg"
                     alt="Tesla Model Y" 
                     className="w-full h-full object-contain"
                   />

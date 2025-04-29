@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">AutoFinance AI</h3>
+            <h3 className="text-2xl font-bold mb-4">Use AI to Buy</h3>
             <p className="text-gray-300 mb-4 max-w-md">
               Revolutionizing automotive financing with AI-powered analytics, 
               transparent terms, and personalized recommendations.
@@ -40,7 +40,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 AutoFinance AI. All rights reserved.
+            © 2025 Use AI to Buy. All rights reserved.
           </div>
           <div className="flex items-center space-x-4">
             <a href="#" className="text-gray-400 hover:text-white transition">

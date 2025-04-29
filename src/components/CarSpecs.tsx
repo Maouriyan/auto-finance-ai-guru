@@ -70,14 +70,14 @@ const CarSpecs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="aspect-video overflow-hidden rounded-lg bg-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1619867350067-769ca9596186?q=80&w=2574&auto=format&fit=crop" 
+                src="https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-5176256608424058506-1024x768.jpeg" 
                 alt="Tesla Model Y Exterior"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="aspect-video overflow-hidden rounded-lg bg-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1617788138017-80ad41b9b648?q=80&w=2574&auto=format&fit=crop" 
+                src="https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-2981292076413387389-1024x768.jpeg" 
                 alt="Tesla Model Y Interior"
                 className="w-full h-full object-cover"
               />

@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl">
             <CarFront className="h-6 w-6 text-primary" />
-            <span>CarDealer</span>
+            <span>Use AI to Buy</span>
           </Link>
           
           <NavigationMenu className="hidden md:flex ml-4">

@@ -12,7 +12,7 @@ import { Badge } from "@/components/ui/badge";
 
 const carImages = [
   {
-    src: "https://images.unsplash.com/photo-1619867350067-769ca9596186?q=80&w=2574&auto=format&fit=crop",
+    src: "https://static.cargurus.com/images/forsale/2025/04/24/11/50/2020_tesla_model_y-pic-4892258161772696808-296x222.jpeg",
     alt: "Tesla Model Y Exterior Front",
   },
   {

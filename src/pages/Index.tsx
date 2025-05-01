@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { ArrowRight, HelpCircle, Bot, MessageCircle, ChartBar, Lightbulb } from "lucide-react";
 import Footer from '@/components/Footer';
 
@@ -178,7 +179,7 @@ const Index = () => {
       
       <Footer />
       
-      {/* AI Chat Modal would be implemented here */}
+      {/* AI Chat Modal */}
       {showAiChat && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
           {/* This would be replaced with a proper dialog component */}

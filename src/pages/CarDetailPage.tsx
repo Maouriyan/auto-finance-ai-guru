@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { 
@@ -18,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import AIPolicyScanner from '@/components/AIPolicyScanner';
 import AIFinancialAdvisor from '@/components/AIFinancialAdvisor';
 import { Link } from 'react-router-dom';
@@ -59,12 +59,12 @@ const carData = {
   },
   aiPolicyScanResults: [
     {
-      type: 'critical',
+      type: 'critical' as 'critical',
       description: 'Mandatory Dealer Financing',
       detail: 'This dealer requires in-house financing to qualify for the advertised price. Minimum 60-month term.'
     },
     {
-      type: 'warning',
+      type: 'warning' as 'warning',
       description: 'Non-negotiable Addendum',
       detail: 'Dealer adds a $1,295 protection package to all vehicles. This is non-negotiable.'
     }

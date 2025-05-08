@@ -21,6 +21,7 @@ import { Input } from "@/components/ui/input";
 import AIPolicyScanner from '@/components/AIPolicyScanner';
 import AIFinancialAdvisor from '@/components/AIFinancialAdvisor';
 import { Link } from 'react-router-dom';
+import AIChatMascot from '@/components/AIChatMascot';
 
 // Mock data - would be fetched from API in real application
 const carData = {
@@ -99,6 +100,9 @@ const CarDetailPage = () => {
   
   return (
     <div className="container pb-16 pt-8 max-w-7xl">
+      {/* Add the AI Chat Mascot component */}
+      <AIChatMascot />
+      
       <div className="flex flex-col md:flex-row justify-between items-start mb-6">
         <div>
           <Link to="/cars" className="inline-flex items-center text-sm text-gray-500 hover:text-gray-800 mb-2">
@@ -186,7 +190,7 @@ const CarDetailPage = () => {
             </TabsList>
             <TabsContent value="overview" className="space-y-6">
               <div>
-                <h2 className="text-xl font-semibold mb-3">About This Vehicle</h2>
+                <h2 className="text-xl font-semibold mb-3" data-section="About This Vehicle">About This Vehicle</h2>
                 <p className="text-gray-700 dark:text-gray-300">{car.description}</p>
               </div>
               
@@ -227,7 +231,7 @@ const CarDetailPage = () => {
               
               {/* AI Policy Scanner */}
               <div>
-                <h2 className="text-xl font-semibold mb-3 flex items-center">
+                <h2 className="text-xl font-semibold mb-3 flex items-center" data-section="AI Policy Scanner Results">
                   <Bot className="h-5 w-5 text-purple-500 mr-2" />
                   AI Policy Scanner Results
                 </h2>
@@ -240,7 +244,7 @@ const CarDetailPage = () => {
             
             <TabsContent value="features">
               <div className="space-y-6">
-                <h2 className="text-xl font-semibold mb-3">Features & Options</h2>
+                <h2 className="text-xl font-semibold mb-3" data-section="Features & Options">Features & Options</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {car.features.map((feature, idx) => (
                     <div key={idx} className="flex items-center">
@@ -254,14 +258,14 @@ const CarDetailPage = () => {
             
             <TabsContent value="specs">
               <div className="space-y-6">
-                <h2 className="text-xl font-semibold mb-3">Detailed Specifications</h2>
+                <h2 className="text-xl font-semibold mb-3" data-section="Specifications">Detailed Specifications</h2>
                 <p className="text-gray-500">Detailed specifications would be displayed here.</p>
               </div>
             </TabsContent>
             
             <TabsContent value="history">
               <div className="space-y-6">
-                <h2 className="text-xl font-semibold mb-3">Vehicle History</h2>
+                <h2 className="text-xl font-semibold mb-3" data-section="Vehicle History">Vehicle History</h2>
                 <p className="text-gray-500">Vehicle history report would be displayed here.</p>
               </div>
             </TabsContent>
@@ -269,7 +273,7 @@ const CarDetailPage = () => {
           
           {/* AI Financial Advisor */}
           <div>
-            <h2 className="text-xl font-semibold mb-3 flex items-center">
+            <h2 className="text-xl font-semibold mb-3 flex items-center" data-section="AI Financial Analysis">
               <Bot className="h-5 w-5 text-purple-500 mr-2" />
               AI Financial Analysis
             </h2>
@@ -407,7 +411,11 @@ const CarDetailPage = () => {
               </div>
             </div>
             <div className="flex gap-2">
-              <Input placeholder="Ask me anything about this car..." className="flex-1" />
+              <Input 
+                placeholder="Ask me anything about this car..." 
+                className="flex-1" 
+                aria-label="Chat with AI Assistant"
+              />
               <Button>Send</Button>
             </div>
           </div>
